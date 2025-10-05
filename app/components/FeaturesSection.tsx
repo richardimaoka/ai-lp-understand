@@ -1,6 +1,7 @@
 "use client";
 import React, { FC } from "react";
 import { CheckCircle } from "./Icons";
+import styles from "./FeaturesSection.module.css";
 
 // --- 型定義 ---
 interface Feature {
@@ -96,20 +97,20 @@ const FeaturesSection: FC = () => {
   ];
 
   return (
-    <section className="lp-section lp-bg-white">
-      <div className="lp-content-wrapper lp-text-center">
-        <h3 className="lp-section-title">ProductProが選ばれる理由</h3>
-        <p className="lp-section-subtitle lp-mb-16">
+    <section className={`${styles.section} ${styles.bgWhite} ${styles.textCenter}`}>
+      <div className={`${styles.contentWrapper} ${styles.textCenter}`}>
+        <h3 className={`${styles.sectionTitle}`}>ProductProが選ばれる理由</h3>
+        <p className={`${styles.sectionSubtitle} ${styles.mb16}`}>
           あなたのビジネスを次のレベルへ導くための、必要なすべてがここにあります。
         </p>
-        <div className="lp-feature-grid">
+        <div className={`${styles.featureGrid}`}>
           {features.map((feature, index) => (
-            <div key={index} className="lp-feature-card">
-              <div className="lp-feature-icon-wrapper">
-                <feature.icon className="lp-icon-lg lp-text-white" />
+            <div key={index} className={`${styles.featureCard}`}>
+              <div className={`${styles.featureIconWrapper}`}>
+                <feature.icon className={`${styles.iconLg} ${styles.textWhite}`} />
               </div>
-              <h4 className="lp-feature-title">{feature.title}</h4>
-              <p className="lp-feature-description">{feature.description}</p>
+              <h4 className={`${styles.featureTitle}`}>{feature.title}</h4>
+              <p className={`${styles.featureDescription}`}>{feature.description}</p>
             </div>
           ))}
         </div>

@@ -1,0 +1,66 @@
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 7rem; /* md:py-28 */
+    padding-bottom: 7rem;
+  }
+}
+
+.bgGrayLight {
+  background-color: #f9fafb;
+} /* bg-gray-50 */
+
+.textCenter {
+  text-align: center;
+}
+
+.contentWrapper {
+  max-width: 1280px; /* max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem; /* px-6 */
+}
+@media (min-width: 768px) {
+  .contentWrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.ctaTitle {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .ctaTitle {
+    font-size: 3rem;
+  } /* md:text-5xl */
+}
+.ctaSubtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 2.5rem;
+}
+.ctaButton {
+  display: inline-block;
+  background-color: #ec4899; /* bg-pink-500 */
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 0.75rem;
+  transition: all 300ms;
+  transform: translateZ(0);
+  box-shadow: 0 25px 50px -12px rgba(236, 72, 153, 0.5); /* shadow-2xl shadow-pink-300/50 */
+  text-decoration: none;
+}
+.ctaButton:hover {
+  background-color: #db2777; /* hover:bg-pink-600 */
+  transform: scale(1.05);
+}

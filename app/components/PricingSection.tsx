@@ -1,6 +1,6 @@
-"use client";
 import React, { FC } from "react";
 import { CheckCircle } from "./Icons";
+import styles from "./PricingSection.module.css";
 
 interface Plan {
   name: string;
@@ -65,72 +65,72 @@ const PricingSection: FC = () => {
   ];
 
   return (
-    <section className="lp-section lp-bg-white">
-      <div className="lp-content-wrapper lp-text-center">
-        <h3 className="lp-section-title">あなたのチームに最適なプランを選ぶ</h3>
-        <p className="lp-section-subtitle lp-mb-16">
+    <section className={`${styles.section} ${styles.bgWhite} ${styles.textCenter}`}>
+      <div className={`${styles.contentWrapper}`}>
+        <h3 className={`${styles.sectionTitle}`}>あなたのチームに最適なプランを選ぶ</h3>
+        <p className={`${styles.sectionSubtitle} ${styles.mb16}`}>
           全てのプランには30日間の無料トライアルが含まれています。今すぐ最適な生産性向上ツールを手に入れましょう。
         </p>
 
-        <div className="lp-pricing-grid">
+        <div className={`${styles.pricingGrid}`}>
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`lp-price-card ${
+              className={`${styles.priceCard} ${
                 plan.isPopular
-                  ? "lp-price-card-popular"
-                  : "lp-price-card-default"
+                  ? styles.priceCardPopular
+                  : styles.priceCardDefault
               }`}
             >
               {plan.isPopular && (
-                <span className="lp-popular-badge">最も人気</span>
+                <span className={`${styles.popularBadge}`}>最も人気</span>
               )}
               <h4
-                className={`lp-price-name ${
+                className={`${styles.priceName} ${
                   plan.isPopular
-                    ? "lp-price-name-popular"
-                    : "lp-price-name-default"
+                    ? styles.priceNamePopular
+                    : styles.priceNameDefault
                 }`}
               >
                 {plan.name}
               </h4>
               <p
-                className={`lp-price-description ${
-                  plan.isPopular ? "lp-text-indigo-200" : "lp-text-gray-500"
+                className={`${styles.priceDescription} ${
+                  plan.isPopular ? styles.textIndigo200 : styles.textGray500
                 }`}
               >
                 {plan.description}
               </p>
-              <div className="lp-price-amount">
+              <div className={`${styles.priceAmount}`}>
                 <span
                   className={
-                    plan.isPopular ? "lp-text-white" : "lp-text-gray-900"
+                    plan.isPopular ? styles.textWhite : styles.textGray900
                   }
                 >
                   {plan.price}
                 </span>
                 <span
-                  className={`lp-price-period ${
-                    plan.isPopular ? "lp-text-indigo-200" : "lp-text-gray-500"
+                  className={`${styles.pricePeriod} ${
+                    plan.isPopular ? styles.textIndigo200 : styles.textGray500
                   }`}
                 >
                   {plan.period}
                 </span>
               </div>
 
-              <ul className="lp-price-features">
+              <ul className={`${styles.priceFeatures}`}>
                 {plan.features.map((feature, fIndex) => (
                   <li
                     key={fIndex}
-                    className={`lp-price-feature-item ${
-                      plan.isPopular ? "lp-text-indigo-100" : "lp-text-gray-700"
+                    className={`${styles.priceFeatureItem} ${
+                      plan.isPopular ? styles.textIndigo100 : styles.textGray700
                     }`}
                   >
                     <CheckCircle
-                      className={`lp-price-check-icon ${
+                      className={`${styles.priceCheckIcon} ${
                         plan.isPopular
-                          ? "lp-text-pink-300"
-                          : "lp-text-indigo-500"
+                          ? styles.textPink300
+                          : styles.textIndigo500
                       }`}
                     />
                     <span>{feature}</span>
@@ -140,8 +140,8 @@ const PricingSection: FC = () => {
 
               <a
                 href="#cta"
-                className={`lp-price-cta ${plan.ctaClass} ${
-                  plan.isPopular ? "lp-price-cta-white" : ""
+                className={`${styles.priceCta} ${plan.ctaClass === "lp-price-cta-default" ? styles.priceCtaDefault : styles.priceCtaPopular} ${
+                  plan.ctaClass === "lp-price-cta-white" ? styles.priceCtaWhite : ""
                 }`}
               >
                 {plan.ctaText}
@@ -155,3 +155,4 @@ const PricingSection: FC = () => {
 };
 
 export default PricingSection;
+

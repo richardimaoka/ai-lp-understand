@@ -9,10 +9,12 @@ import PricingSection from "./components/PricingSection";
 import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
 
+import "./globals.css";
+
 // --- メインコンポーネント ---
 const App: FC = () => {
   return (
-    <div className="lp-body">
+    <div className="body">
       <Header />
       <main>
         <HeroSection />

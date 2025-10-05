@@ -1,0 +1,220 @@
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
+  align-items: stretch;
+}
+@media (min-width: 1024px) {
+  .pricingGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.priceCard {
+  padding: 2rem;
+  border-radius: 1rem; /* rounded-2xl */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
+  transition: all 500ms;
+  display: flex;
+  flex-direction: column;
+}
+
+/* デフォルトカードスタイル */
+.priceCardDefault {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* 人気プランカードスタイル */
+.priceCardPopular {
+  background-color: #4f46e5; /* bg-indigo-600 */
+  color: #fff;
+  transform: scale(1.05);
+  border: 4px solid #ec4899; /* ring-4 ring-pink-500 */
+}
+
+.popularBadge {
+  display: inline-block;
+  background-color: #ec4899; /* bg-pink-500 */
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  align-self: center;
+}
+
+.priceName {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.priceNameDefault {
+  color: #4f46e5;
+}
+.priceNamePopular {
+  color: #fff;
+}
+
+.priceDescription {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 0;
+}
+
+.priceAmount {
+  font-size: 3.75rem; /* text-6xl */
+  font-weight: 800;
+  margin-bottom: 2rem;
+  flex-grow: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.pricePeriod {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 0.25rem;
+}
+
+.priceFeatures {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* space-y-3 */
+  flex-grow: 1;
+}
+.priceFeatureItem {
+  display: flex;
+  align-items: flex-start;
+}
+.priceCheckIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+.priceCardDefault .priceCheckIcon {
+  color: #4f46e5;
+} /* text-indigo-500 */
+.priceCardPopular .priceCheckIcon {
+  color: #f9a8d4;
+} /* text-pink-300 */
+
+.priceCta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 300ms;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+.priceCtaDefault {
+  background-color: #6366f1; /* bg-indigo-500 */
+  color: #fff;
+}
+.priceCtaDefault:hover {
+  background-color: #4f46e5; /* hover:bg-indigo-600 */
+}
+.priceCtaPopular {
+  background-color: #ec4899; /* bg-pink-500 */
+  color: #fff;
+}
+.priceCtaPopular:hover {
+  background-color: #db2777; /* hover:bg-pink-600 */
+}
+.priceCtaWhite {
+  background-color: #fff;
+  color: #4f46e5;
+}
+.priceCtaWhite:hover {
+  background-color: #f3f4f6;
+}
+
+/* 共通セクションスタイル */
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 7rem; /* md:py-28 */
+    padding-bottom: 7rem;
+  }
+}
+.sectionTitle {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .sectionTitle {
+    font-size: 2.25rem;
+  } /* md:text-4xl */
+}
+.sectionSubtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+.mb16 {
+  margin-bottom: 4rem;
+}
+
+.bgWhite {
+  background-color: #fff;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.contentWrapper {
+  max-width: 1280px; /* max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem; /* px-6 */
+}
+@media (min-width: 768px) {
+  .contentWrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.textIndigo200 {
+  color: #c7d2fe;
+}
+.textGray500 {
+  color: #6b7280;
+}
+.textWhite {
+  color: #fff;
+}
+.textGray900 {
+  color: #111827;
+}
+.textIndigo100 {
+  color: #e0e7ff;
+}
+.textGray700 {
+  color: #374151;
+}
+.textPink300 {
+  color: #f9a8d4;
+}
+.textIndigo500 {
+  color: #6366f1;
+}

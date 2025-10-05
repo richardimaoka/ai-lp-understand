@@ -1,0 +1,98 @@
+.bgIndigoDark {
+  background-color: #4338ca;
+}
+.testimonialHeading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .testimonialHeading {
+    font-size: 3rem;
+  } /* md:text-5xl */
+}
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem; /* gap-10 */
+}
+@media (min-width: 768px) {
+  .testimonialGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Testimonial Card */
+.testimonialCard {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+  transition: all 300ms;
+  transform: translateZ(0); /* For transform transition smoothing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+.testimonialCard:hover {
+  transform: scale(1.03);
+}
+.testimonialImage {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  border: 4px solid #c7d2fe; /* ring-4 ring-indigo-200 */
+}
+.testimonialQuote {
+  font-size: 1.125rem;
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+.testimonialFooter {
+  margin-top: auto;
+}
+.testimonialName {
+  font-weight: 700;
+  color: #111827;
+  font-size: 1rem;
+}
+.testimonialTitle {
+  font-size: 0.875rem;
+  color: #4f46e5;
+}
+
+/* 共通セクションスタイル */
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 7rem; /* md:py-28 */
+    padding-bottom: 7rem;
+  }
+}
+
+.contentWrapper {
+  max-width: 1280px; /* max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem; /* px-6 */
+}
+@media (min-width: 768px) {
+  .contentWrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.textCenter {
+  text-align: center;
+}

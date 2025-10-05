@@ -1,5 +1,6 @@
 "use client";
 import React, { FC } from "react";
+import styles from "./TestimonialSection.module.css";
 
 interface Testimonial {
   image: string;
@@ -14,11 +15,11 @@ const TestimonialCard: FC<Testimonial> = ({
   name,
   title,
 }) => (
-  <div className="lp-testimonial-card">
+  <div className={styles.testimonialCard}>
     <img
       src={image}
       alt={`${name} の写真`}
-      className="lp-testimonial-image"
+      className={styles.testimonialImage}
       // In case the placeholder link fails, use a fallback
       onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
         const target = e.target as HTMLImageElement;
@@ -26,10 +27,10 @@ const TestimonialCard: FC<Testimonial> = ({
         target.src = "https://placehold.co/100x100/6366F1/ffffff?text=User";
       }}
     />
-    <p className="lp-testimonial-quote">「{quote}」</p>
-    <div className="lp-testimonial-footer">
-      <p className="lp-testimonial-name">{name}</p>
-      <p className="lp-testimonial-title">{title}</p>
+    <p className={styles.testimonialQuote}>「{quote}」</p>
+    <div className={styles.testimonialFooter}>
+      <p className={styles.testimonialName}>{name}</p>
+      <p className={styles.testimonialTitle}>{title}</p>
     </div>
   </div>
 );
@@ -67,10 +68,10 @@ const TestimonialSection: FC = () => {
   ];
 
   return (
-    <section className="lp-section lp-bg-indigo-dark">
-      <div className="lp-content-wrapper lp-text-center">
-        <h3 className="lp-testimonial-heading">信頼の実績 — お客様からの声</h3>
-        <div className="lp-testimonial-grid">
+    <section className={`${styles.section} ${styles.bgIndigoDark}`}>
+      <div className={`${styles.contentWrapper} ${styles.textCenter}`}>
+        <h3 className={`${styles.testimonialHeading}`}>信頼の実績 — お客様からの声</h3>
+        <div className={`${styles.testimonialGrid}`}>
           {testimonials.map((t, index) => (
             <TestimonialCard key={index} {...t} />
           ))}
