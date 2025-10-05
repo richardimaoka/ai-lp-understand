@@ -1,0 +1,595 @@
+/* ベーススタイル */
+.lp-body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb; /* bg-gray-50 */
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+.lp-content-wrapper {
+  max-width: 1280px; /* max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem; /* px-6 */
+}
+
+.lp-text-center {
+  text-align: center;
+}
+.lp-bg-white {
+  background-color: #fff;
+}
+.lp-mb-4 {
+  margin-bottom: 1rem;
+}
+.lp-mb-6 {
+  margin-bottom: 1.5rem;
+}
+.lp-mb-10 {
+  margin-bottom: 2.5rem;
+}
+.lp-mb-12 {
+  margin-bottom: 3rem;
+}
+.lp-mb-16 {
+  margin-bottom: 4rem;
+}
+.lp-mt-4 {
+  margin-top: 1rem;
+}
+
+/* 色の定義 */
+.lp-bg-indigo {
+  background-color: #4f46e5;
+}
+.lp-bg-indigo-light {
+  background-color: #eef2ff;
+}
+.lp-bg-indigo-dark {
+  background-color: #4338ca;
+} /* bg-indigo-700 */
+.lp-bg-gray-light {
+  background-color: #f9fafb;
+} /* bg-gray-50 */
+.lp-text-indigo {
+  color: #4f46e5;
+}
+.lp-text-indigo-dark {
+  color: #3730a3;
+} /* text-indigo-800 */
+.lp-text-gray-900 {
+  color: #111827;
+}
+.lp-text-gray-600 {
+  color: #4b5563;
+}
+.lp-text-gray-500 {
+  color: #6b7280;
+}
+.lp-text-white {
+  color: #fff;
+}
+
+/* ヘッダー */
+.lp-header {
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); /* shadow-md */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.lp-header-content-wrapper {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lp-logo {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 800; /* font-extrabold */
+  color: #4f46e5; /* text-indigo-600 */
+  letter-spacing: -0.05em; /* tracking-tight */
+}
+.lp-logo-suffix {
+  color: #111827;
+}
+
+.lp-header-cta {
+  background-color: #4f46e5;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* rounded-full */
+  transition: all 300ms;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem; /* text-sm */
+  text-decoration: none;
+}
+.lp-header-cta:hover {
+  background-color: #4338ca; /* hover:bg-indigo-700 */
+}
+
+/* ヒーローセクション */
+.lp-hero-section {
+  background-color: #f9fafb;
+  padding: 4rem 0 5rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .lp-hero-section {
+    padding: 8rem 0; /* md:py-32 */
+  }
+}
+.lp-hero-content {
+  max-width: 80rem; /* max-w-5xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.lp-badge {
+  display: inline-block;
+  background-color: #eef2ff;
+  color: #4f46e5;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+.lp-badge-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.lp-hero-title {
+  font-size: 3rem; /* text-5xl */
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  line-height: 1.25;
+}
+@media (min-width: 768px) {
+  .lp-hero-title {
+    font-size: 4.5rem;
+  } /* md:text-7xl */
+}
+.lp-hero-title-primary {
+  display: block;
+  color: #4f46e5;
+}
+
+.lp-hero-subtitle {
+  font-size: 1.25rem; /* text-xl */
+  color: #4b5563;
+  margin-bottom: 2.5rem;
+  max-width: 48rem; /* max-w-3xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .lp-hero-subtitle {
+    font-size: 1.5rem;
+  } /* md:text-2xl */
+}
+.lp-strong-highlight {
+  font-weight: 800; /* font-extrabold */
+  color: #3730a3; /* text-indigo-800 */
+}
+
+.lp-hero-cta {
+  display: inline-block;
+  background-color: #4f46e5;
+  color: #fff;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 0.75rem; /* rounded-xl */
+  transition: all 300ms;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
+  text-decoration: none;
+}
+.lp-hero-cta:hover {
+  background-color: #4338ca;
+  transform: scale(1.05);
+}
+.lp-hero-disclaimer {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* 共通セクションスタイル */
+.lp-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .lp-section {
+    padding-top: 7rem; /* md:py-28 */
+    padding-bottom: 7rem;
+  }
+}
+.lp-section-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .lp-section-title {
+    font-size: 2.25rem;
+  } /* md:text-4xl */
+}
+.lp-section-subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+.lp-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem; /* gap-10 */
+}
+@media (min-width: 768px) {
+  .lp-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .lp-feature-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 特徴カード */
+.lp-feature-card {
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  transition: all 300ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.lp-feature-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* hover:shadow-2xl */
+}
+.lp-feature-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem; /* w-12 */
+  height: 3rem; /* h-12 */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6366f1; /* bg-indigo-500 */
+  border-radius: 9999px;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.lp-icon-lg {
+  width: 1.5rem;
+  height: 1.5rem;
+} /* w-6 h-6 */
+.lp-feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+.lp-feature-description {
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+/* お客様の声セクション */
+.lp-bg-indigo-dark {
+  background-color: #4338ca;
+}
+.lp-testimonial-heading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .lp-testimonial-heading {
+    font-size: 3rem;
+  } /* md:text-5xl */
+}
+.lp-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem; /* gap-10 */
+}
+@media (min-width: 768px) {
+  .lp-testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Testimonial Card */
+.lp-testimonial-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+  transition: all 300ms;
+  transform: translateZ(0); /* For transform transition smoothing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+.lp-testimonial-card:hover {
+  transform: scale(1.03);
+}
+.lp-testimonial-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  border: 4px solid #c7d2fe; /* ring-4 ring-indigo-200 */
+}
+.lp-testimonial-quote {
+  font-size: 1.125rem;
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+.lp-testimonial-footer {
+  margin-top: auto;
+}
+.lp-testimonial-name {
+  font-weight: 700;
+  color: #111827;
+  font-size: 1rem;
+}
+.lp-testimonial-title {
+  font-size: 0.875rem;
+  color: #4f46e5;
+}
+
+/* 料金プランセクション */
+.lp-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
+  align-items: stretch;
+}
+@media (min-width: 1024px) {
+  .lp-pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.lp-price-card {
+  padding: 2rem;
+  border-radius: 1rem; /* rounded-2xl */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
+  transition: all 500ms;
+  display: flex;
+  flex-direction: column;
+}
+
+/* デフォルトカードスタイル */
+.lp-price-card-default {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* 人気プランカードスタイル */
+.lp-price-card-popular {
+  background-color: #4f46e5; /* bg-indigo-600 */
+  color: #fff;
+  transform: scale(1.05);
+  border: 4px solid #ec4899; /* ring-4 ring-pink-500 */
+}
+
+.lp-popular-badge {
+  display: inline-block;
+  background-color: #ec4899; /* bg-pink-500 */
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  align-self: center;
+}
+
+.lp-price-name {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.lp-price-name-default {
+  color: #4f46e5;
+}
+.lp-price-name-popular {
+  color: #fff;
+}
+
+.lp-price-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 0;
+}
+
+.lp-price-amount {
+  font-size: 3.75rem; /* text-6xl */
+  font-weight: 800;
+  margin-bottom: 2rem;
+  flex-grow: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.lp-price-period {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 0.25rem;
+}
+
+.lp-price-features {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* space-y-3 */
+  flex-grow: 1;
+}
+.lp-price-feature-item {
+  display: flex;
+  align-items: flex-start;
+}
+.lp-price-check-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+.lp-price-card-default .lp-price-check-icon {
+  color: #4f46e5;
+} /* text-indigo-500 */
+.lp-price-card-popular .lp-price-check-icon {
+  color: #f9a8d4;
+} /* text-pink-300 */
+
+.lp-price-cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 300ms;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+.lp-price-cta-default {
+  background-color: #6366f1; /* bg-indigo-500 */
+  color: #fff;
+}
+.lp-price-cta-default:hover {
+  background-color: #4f46e5; /* hover:bg-indigo-600 */
+}
+.lp-price-cta-popular {
+  background-color: #ec4899; /* bg-pink-500 */
+  color: #fff;
+}
+.lp-price-cta-popular:hover {
+  background-color: #db2777; /* hover:bg-pink-600 */
+}
+.lp-price-cta-white {
+  background-color: #fff;
+  color: #4f46e5;
+}
+.lp-price-cta-white:hover {
+  background-color: #f3f4f6;
+}
+
+/* CTAセクション */
+.lp-cta-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .lp-cta-title {
+    font-size: 3rem;
+  } /* md:text-5xl */
+}
+.lp-cta-subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 2.5rem;
+}
+.lp-cta-button {
+  display: inline-block;
+  background-color: #ec4899; /* bg-pink-500 */
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 0.75rem;
+  transition: all 300ms;
+  transform: translateZ(0);
+  box-shadow: 0 25px 50px -12px rgba(236, 72, 153, 0.5); /* shadow-2xl shadow-pink-300/50 */
+  text-decoration: none;
+}
+.lp-cta-button:hover {
+  background-color: #db2777; /* hover:bg-pink-600 */
+  transform: scale(1.05);
+}
+
+/* フッター */
+.lp-footer {
+  background-color: #1f2937; /* bg-gray-800 */
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.lp-footer-brand {
+  margin-bottom: 1rem;
+}
+.lp-footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* space-x-6 */
+  font-size: 0.875rem;
+}
+.lp-footer-link {
+  color: #9ca3af; /* text-gray-400 */
+  transition: color 200ms;
+  text-decoration: none;
+}
+.lp-footer-link:hover {
+  color: #fff;
+}
+.lp-footer-copy {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+
+/* 共通アイコンの色 */
+.lp-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .lp-header {
+    padding: 1rem 3rem;
+  }
+  .lp-content-wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
