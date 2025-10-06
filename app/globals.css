@@ -1,7 +1,0 @@
-/* ベーススタイル */
-.body {
-  font-family: "Inter", sans-serif;
-  background-color: #f9fafb; /* bg-gray-50 */
-  min-height: 100vh;
-  line-height: 1.5;
-}
