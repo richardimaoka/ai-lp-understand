@@ -1,0 +1,335 @@
+.container {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #e0e0e0;
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Global styles for sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5em;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+/* Hero Section */
+.heroSection {
+  background: linear-gradient(135deg, #2a2a2a, #0a0a0a);
+  color: #ffffff;
+  padding: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.heroContent {
+  max-width: 900px;
+}
+
+.heroContent h1 {
+  font-size: 3.8em;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroContent p {
+  font-size: 1.4em;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.primaryButton {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: #0056b3;
+}
+
+.secondaryButton {
+  background-color: #333;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: #555;
+  border-color: #777;
+}
+
+/* Features Section */
+.featuresSection {
+  background-color: #222222;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureItem {
+  background-color: #2a2a2a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.featureItem:hover {
+  transform: translateY(-10px);
+}
+
+.featureIcon {
+  font-size: 3em;
+  margin-bottom: 20px;
+  display: block;
+  color: #007bff;
+}
+
+.featureItem h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.featureItem p {
+  font-size: 1em;
+  color: #b0b0b0;
+}
+
+/* Testimonials Section */
+.testimonialsSection {
+  background-color: #1a1a1a;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonialItem {
+  background-color: #2a2a2a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.testimonialItem p {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #b0b0b0;
+}
+
+.testimonialAuthor {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Key Features Section */
+.keyFeaturesSection {
+  background-color: #222222;
+}
+
+.keyFeaturesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.keyFeatureItem {
+  background-color: #2a2a2a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.keyFeatureItem h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.keyFeatureItem p {
+  font-size: 1em;
+  color: #b0b0b0;
+}
+
+/* Pricing Section */
+.pricingSection {
+  background-color: #1a1a1a;
+}
+
+.pricingCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricingCard {
+  background-color: #2a2a2a;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.pricingCard:hover {
+  transform: translateY(-10px);
+}
+
+.pricingCard h3 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.price {
+  font-size: 3em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.price span {
+  font-size: 0.5em;
+  font-weight: normal;
+  color: #b0b0b0;
+}
+
+.pricingCard ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.pricingCard ul li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #e0e0e0;
+}
+
+.pricingCard ul li::before {
+  content: '✓';
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #0a0a0a;
+  color: #b0b0b0;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.footerLinks a {
+  color: #b0b0b0;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.8em;
+  }
+
+  .heroContent p {
+    font-size: 1.2em;
+  }
+
+  .sectionTitle {
+    font-size: 2em;
+  }
+
+  .section {
+    padding: 60px 15px;
+  }
+
+  .featuresGrid, .testimonialsGrid, .keyFeaturesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricingCard {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent h1 {
+    font-size: 2em;
+  }
+
+  .heroContent p {
+    font-size: 1em;
+  }
+
+  .primaryButton, .secondaryButton {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+
+  .featureIcon {
+    font-size: 2.5em;
+  }
+
+  .featureItem h3, .keyFeatureItem h3 {
+    font-size: 1.5em;
+  }
+
+  .price {
+    font-size: 2.5em;
+  }
+
+  .footerLinks a {
+    display: block;
+    margin: 10px 0;
+  }
+}
