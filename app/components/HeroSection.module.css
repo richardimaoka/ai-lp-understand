@@ -1,0 +1,86 @@
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5em;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+.heroSection {
+  background: linear-gradient(135deg, #2a2a2a, #0a0a0a);
+  color: #ffffff;
+  padding: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.heroContent {
+  max-width: 900px;
+}
+
+.heroContent h1 {
+  font-size: 3.8em;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroContent p {
+  font-size: 1.4em;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.primaryButton {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.8em;
+  }
+
+  .heroContent p {
+    font-size: 1.2em;
+  }
+
+  .sectionTitle {
+    font-size: 2em;
+  }
+
+  .section {
+    padding: 60px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent h1 {
+    font-size: 2em;
+  }
+
+  .heroContent p {
+    font-size: 1em;
+  }
+
+  .primaryButton {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+}
